@@ -1,7 +1,6 @@
-package com.example.movieappassessment
+package com.example.movieappassessment.repository
 
 import com.example.movieappassessment.dataObj.GetMoviesResponse
-import com.example.movieappassessment.utils.Credentials
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

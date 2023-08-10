@@ -1,8 +1,7 @@
-package com.example.movieappassessment
+package com.example.movieappassessment.repository
 
 import android.util.Log
 import com.example.movieappassessment.dataObj.GetMoviesResponse
-import com.example.movieappassessment.utils.Credentials
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
