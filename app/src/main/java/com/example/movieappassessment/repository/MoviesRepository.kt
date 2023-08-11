@@ -44,7 +44,7 @@ object MoviesRepository {
                             onError.invoke()
                         }
                     } else {
-                        //Log.d("Repository", "Movies: ----------FAIL test-----------------> ")
+                        Log.d("Repository", "Movies: ----------FAIL test-----------------> ")
                         onError.invoke()
                     }
                 }
