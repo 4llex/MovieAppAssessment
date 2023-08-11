@@ -20,4 +20,11 @@ interface Api {
         @Query("api_key") apiKey: String = Credentials.API_KEY,
         @Query("page") page: Int
     ): Call<GetMoviesResponse>
+
+    //fetching upcoming movies.
+    @GET("movie/upcoming")
+    fun getUpcomingMovies(
+        @Query("api_key") apiKey: String = Credentials.API_KEY,
+        @Query("page") page: Int
+    ): Call<GetMoviesResponse>
 }
