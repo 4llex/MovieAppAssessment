@@ -26,6 +26,7 @@ object MoviesRepository {
         onSuccess: (movies: List<Movie>) -> Unit,
         onError: () -> Unit
         ) {
+        Log.d("Repository", "Movies: ----------Request test-----------------> ")
         api.getPopularMovies(page = page)
             .enqueue(object : Callback<GetMoviesResponse> {
 
@@ -33,7 +34,7 @@ object MoviesRepository {
                     call: Call<GetMoviesResponse>,
                     response: Response<GetMoviesResponse>
                 ) {
-                    Log.d("Repository", " Movies ----------response-----------------> $response")
+                    Log.d("Repository", " Movies ----------response-----------------> $response")//TODO: check why response is delayed ~1min
                     if (response.isSuccessful) {
                         val responseBody = response.body()
                         if (responseBody != null) {
