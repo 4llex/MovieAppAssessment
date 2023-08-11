@@ -6,5 +6,6 @@
     <string name="top_rated">Top Rated</string>
     <string name="highest_rated_movies">Highest rated movies of all time</string>
     <string name="upcoming">Upcoming</string>
+    <string name="now_playing">Now Playing</string>
     <string name="stay_updated">Stay updated with the latest movies</string>
 </resources>
